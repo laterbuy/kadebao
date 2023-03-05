@@ -1,0 +1,285 @@
+.label-v1-bg {
+    background: url('../static/label/v1-bg.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+.label-v2-bg {
+    background: url('../static/label/v2-bg.png') no-repeat center;
+    background-size: 100% 100%;
+}
+.label {
+    width: 1200px;
+    margin: 0 auto 0;
+    padding: 80px 0;
+}
+
+.label-v1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 59px 0 47px;
+}
+
+.l1-flex {
+    width: 520px;
+}
+
+.l1-ttle {
+    font-size: 58px;
+    color: #E2A275;
+    line-height: 80px;
+}
+
+.l1-desc {
+    font-size: 24px;
+    color: #F8C4A6;
+    line-height: 36px;
+    margin-top: 40px;
+}
+
+.l1-img1 {
+    width: 498px;
+    margin-left: 75px;
+}
+
+.l2-title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #3D4756;
+    text-align: center;
+    margin: 0 0 33px 0;
+}
+
+.l2-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.l2-list-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.v2-img-2 {
+    width: 268px;
+}
+
+.v2-img-1 {
+    width: 305px;
+}
+
+.v2-img-3 {
+    width: 268px;
+}
+
+.l2-item-label-2 {
+    margin-top: 27px;
+    color: #3D4756;
+    width: 180px;
+    height: 32px;
+    background: url('./../static/label/v2-img-5.png');
+    background-size: 100%;
+}
+
+.l2-item-label-1 {
+    width: 180px;
+    height: 32px;
+    color: #712E05;
+    background: url('./../static/label/v2-img-4.png');
+    background-size: 100%;
+}
+
+.l2-item-label-3 {
+    width: 180px;
+    height: 32px;
+    margin-top: 32px;
+    color: #3D4756;
+    background: url('./../static/label/v2-img-6.png');
+    background-size: 100%;
+}
+
+.l2-item-desc {
+    font-size: 14px;
+    line-height: 24px;
+    color: #666E76;
+    margin-top: 15px;
+}
+
+.label-v3 {
+    background-color: #F8F8FA;
+}
+
+.l3 {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto 0;
+    padding: 80px 0;
+}
+
+.l3-desc {
+    font-size: 16px;
+    color: #666E76;
+    line-height: 28px;
+    text-align: center;
+    width: 900px;
+    margin: 0 auto 40px;
+}
+
+.l3-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.l3-1-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #41474D;
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.l3-1-content {
+    position: relative;
+}
+
+.l3-1-content-img {
+    width: 600px;
+}
+
+.l3-1-content-text {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.l3-1-text1 {
+    position: absolute;
+    top: 42px;
+    left: 3px;
+    font-size: 16px;
+    color: #41474D;
+    line-height: 28px;
+}
+
+.l3-1-text2 {
+    position: absolute;
+    top: 42px;
+    left: 194px;
+    width: 160px;
+    text-align: center;
+    font-size: 16px;
+    color: #41474D;
+    line-height: 28px;
+}
+
+.l3-1-text3 {
+    position: absolute;
+    top: 42px;
+    right: 49px;
+    font-size: 16px;
+    color: #41474D;
+    line-height: 28px;
+}
+
+.l3-label-1 {
+    position: absolute;
+    top: -187px;
+    left: 22px;
+    width: 16px;
+    height: 16px;
+    background-color: #D74F27;
+    border-radius: 50%;
+}
+
+.l3-label-1::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 213px;
+    background-color: #D74E26;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.l3-label-2 {
+    position: absolute;
+    top: -92px;
+    left: 260px;
+    width: 16px;
+    height: 16px;
+    background-color: #D74F27;
+    border-radius: 50%;
+}
+
+.l3-label-2::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 118px;
+    background-color: #D74E26;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.l3-label-3 {
+    position: absolute;
+    top: -92px;
+    left: 499px;
+    width: 16px;
+    height: 16px;
+    background-color: #D74F27;
+    border-radius: 50%;
+}
+
+.l3-label-3::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 118px;
+    background-color: #D74E26;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    margin-left: -1px;
+}
+
+.l3-2 {
+    margin: 80px 0 0;
+}
+
+.l3-2 .l3-1-text1 {
+    left: 0;
+}
+
+.l3-2 .l3-label-1 {
+    left: 51px;
+    top: -76px;
+}
+
+.l3-2 .l3-label-3 {
+    right: 72px;
+    top: -76px;
+}
+
+.l3-2 .l3-label-1::before {
+    height: 102px;
+}
+
+.l3-2 .l3-label-3::before {
+    height: 102px;
+}
+
+.l3-2 .l3-1-text3 {
+    right: 0;
+}

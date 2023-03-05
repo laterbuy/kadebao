@@ -1,0 +1,20 @@
+#certify {
+    position: relative;
+    width: 631px;/*判断宽度设置响应式效果*/
+    margin-left: 144px;
+}
+
+#certify .swiper-container {
+}
+
+#certify  .swiper-slide {
+	/* width: 520px;
+	height: 408px; */
+    width: 230px;
+	height: 372px;
+}
+#certify  .swiper-slide img{
+    width: 230px;
+	height: 372px;
+	display:block;
+}

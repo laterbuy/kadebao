@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>卡得宝</title>
+    <style>
+        .l4-container {
+            width: 1200px;
+            margin: 80px auto;
+        }
+
+        .l4-c-title {
+            text-align: center;
+            font-size: 30px;
+            line-height: 30px;
+            color: #3D4756;
+            margin-bottom: 44px;
+        }
+
+        .l4-content {
+            display: flex;
+        }
+
+        .l4-text-box {
+            width: 480px;
+        }
+
+        .l4 .l4-text-box {
+            margin-right: 100px;
+        }
+
+        .l4-img-box {
+            width: 500px;
+        }
+
+        .v4-img-1 {
+            width: 500px;
+        }
+
+        .l4-t-1 {
+            font-size: 36px;
+            color: #D51E21;
+        }
+
+        .l4-t-2 {
+            font-size: 24px;
+            color: #41474D;
+            margin: 10px 0 32px 0;
+        }
+
+        .l4-t-3 {
+            font-size: 16px;
+            color: #666E76;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+
+        .l5 {
+            background-color: #F7F8FA;
+        }
+
+        .l5 .l4-img-box {
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="view label-v1-bg" style="height: 580px">
+            <div class="label label-v1 ">
+                <div class="l1-flex">
+                    <div class="l1-ttle">卡得宝<span class="jode">®</span></div>
+                    <div class="l1-ttle">专用评级标签</div>
+                    <div class="l1-desc">卡得宝<span class="jode">®</span>精选上等材料，打造独特的三色标签体系，不仅使得卡片品相一目了然，而且能为评级卡片增色颇多，让心爱的藏卡更具观赏性。</div>
+                </div>
+                <img class="l1-img1 lazy" data-src="./static/label/v1-img1.png" alt="">
+            </div>
+        </div>
+        <div class="view label-v2-bg">
+            <div class="label" style="padding-bottom: 16px;">
+                <div class="l2-title">独特的三色标签体系</div>
+                <div class="l2-list">
+                    <div class="l2-list-item">
+                        <img class="v2-img-2 lazy" data-src="./static/label/v2-img-2.png" alt="">
+                        <div class="l2-item-label-2">银色标签，尊贵沉稳</div>
+                        <div class="l2-item-desc">此类颜色意味着卡片保存良好，略有瑕疵，不失为一张极具收藏价值的卡片。</div>
+                    </div>
+                    <div class="l2-list-item">
+                        <img class="v2-img-1 lazy" data-src="./static/label/v2-img-1.png" alt="">
+                        <div class="l2-item-label-1">金色标签，低调奢华</div>
+                        <div class="l2-item-desc">此类颜色意味着卡片的品相经过了最严格的检查，卡片保存非常完好，值得永久珍藏。</div>
+                    </div>
+                    <div class="l2-list-item">
+                        <img class="v2-img-3 lazy" data-src="./static/label/v2-img-3.png" alt="">
+                        <div class="l2-item-label-3">白色标签，简约质朴</div>
+                        <div class="l2-item-desc">此类颜色表明卡片有所损伤，但这并不能掩盖卡片中独一无二的故事，以及所有者对其的情感。</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view label-v3">
+            <div class="l3">
+                <div class="l2-title">标准化的分级工具，专业化的评级服务</div>
+                <div class="l3-desc">
+                    卡得宝<span class="jode">®</span>评级标签由知名设计师融合中国传统元素，联手国内顶级防伪厂调校印制，融合隐形防伪、微缩雕刻、可变信息匹配等多重防伪技术，打造一卡一码、扫码可查且暗藏玄机的防伪评级标签。</div>
+                <div class="l3-1">
+                    <div class="l3-1-title">评级标签正面</div>
+                    <div class="l3-1-content">
+                        <img class="l3-1-content-img lazy" data-src="./static/label/v3-img-1.png" alt="">
+                        <div class="l3-1-content-text">
+                            <div class="l3-1-text1">隐形防伪</div>
+                            <div class="l3-1-text2">特殊材质及专属颜色，极难仿制</div>
+                            <div class="l3-1-text3">微缩雕刻</div>
+                            <div class="l3-label-1"></div>
+                            <div class="l3-label-2"></div>
+                            <div class="l3-label-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="l3-1 l3-2">
+                    <div class="l3-1-title">评级标签正面</div>
+                    <div class="l3-1-content">
+                        <img class="l3-1-content-img lazy" data-src="./static/label/v3-img-2.png" alt="">
+                        <div class="l3-1-content-text">
+                            <div class="l3-1-text1">专用配色的卡得宝logo</div>
+                            <div class="l3-1-text3">可用于验证真伪的二维码</div>
+                            <div class="l3-label-1"></div>
+                            <div class="l3-label-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view l4">
+            <div class="l4-container">
+                <div class="l4-c-title">为客户精心定制的多种服务</div>
+                <div class="l4-content">
+                    <div class="l4-text-box">
+                        <div class="l4-t-1">01</div>
+                        <div class="l4-t-2">卡得宝<span class="jode">®</span>评级有小分标准标签样图</div>
+                        <div class="l4-t-3">卡得宝<span class="jode">®</span>根据符合中文卡特征的四个关键类别进行评分：正面、背面、四边、四角。同时《卡得宝<span class="jode">®</span>中文卡评级标准》的编写和发布确保了卡得宝<span class="jode">®</span>评级的权威性和一致性。
+                        </div>
+                        <div class="l4-t-3">卡得宝<span class="jode">®</span>评级标签小分的独特功能之一，是它提供了卡片的具体分数信息，不会让您对卡片最终评分感到困惑。</div>
+                        <div class="l4-t-3 ">在评级师确定您卡片的总分前，将仔细考量每一个关键类别的分数（即小分）。</div>
+                    </div>
+                    <div class="l4-img-box">
+                        <img class="v4-img-1 lazy" data-src="./static/label/v4-img-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view l5">
+            <div class="l4-container">
+                <div class="l4-content">
+                    <div class="l4-img-box">
+                        <img class="v4-img-1 lazy" data-src="./static/label/v5-img-1.png" alt="">
+                    </div>
+                    <div class="l4-text-box">
+                        <div class="l4-t-1">02</div>
+                        <div class="l4-t-2">卡得宝<span class="jode">®</span>评级无小分标签样图</div>
+                        <div class="l4-t-3">卡得宝<span class="jode">®</span>同时也提供无小分标签。卡片将按照
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view l4">
+            <div class="l4-container">
+                <div class="l4-content">
+                    <div class="l4-text-box">
+                        <div class="l4-t-1">03</div>
+                        <div class="l4-t-2">卡得宝<span class="jode">®</span>评级仅封装标签样图</div>
+                        <div class="l4-t-3">卡得宝<span class="jode">®</span>还推出了「仅封装」服务。</div>
+                        <div class="l4-t-3">在此服务中，我们不对卡片的品相给出具体分数，所以评级标签中仅提供卡片的相关信息，以及卡得宝<span class="jode">®</span>出具的真实证明。
+                            换句话说，我们将首先对卡片的真伪进行鉴定：如鉴定为真，则对卡片进行封装；如鉴定为假，则原样退回用户。本服务中的评级标签统一采用银色标签。</div>
+                    </div>
+                    <div class="l4-img-box">
+                        <img class="v4-img-1 lazy" data-src="./static/label/v6-img-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
