@@ -13,7 +13,7 @@ module.exports = {
   },
   output: {
     filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "docs"),
   },
   mode: process.env.NODE_ENV === "development" ? "development" : "production", // development  production
   module: {
