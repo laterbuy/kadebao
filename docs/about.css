@@ -172,7 +172,7 @@ body {
 .vl_2 {
     font-size: 58px;
     color: #fff;
-    font-weight: 600;
+    font-weight: bold;
     font-family: alibaba;
 }
 
@@ -293,10 +293,11 @@ body {
     padding: 32px 38px 40px;
     border: 1px solid #EEF0F2;
     border-radius: 3px;
+    transition-duration: 0.5s;
 }
 
 .characteristics li:hover {
-    border: none;
+    border: 1px solid transparent;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
 }
 
@@ -373,6 +374,7 @@ body {
 
 .uniqueness_title {
     width: 125px;
+    transition-duration: 0.5s;
 }
 
 .uniqueness_title div:nth-child(1) {
@@ -397,6 +399,8 @@ body {
     border-radius: 3px;
     width: 298px;
     height: 150px;
+    transition-duration: 0.3s;
+    box-shadow: 8px 8px 12px 0px transparent;
 }
 
 .uniqueness_desc div:nth-child(1) {
@@ -404,6 +408,7 @@ body {
     font-size: 14px;
     margin-bottom: 8px;
     font-weight: bold;
+    transition-duration: 0.3s;
 }
 
 .uniqueness_desc::before {
@@ -425,6 +430,7 @@ body {
     margin: 0 16px 0 0;
     border-radius: 50%;
     position: relative;
+    transition-duration: 0.3s;
 }
 
 .max_circle {
@@ -435,6 +441,7 @@ body {
     top: 0;
     z-index: 999;
     border-radius: 50%;
+    transition-duration: 0.3s;
 }
 
 .min_circle {
@@ -447,6 +454,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
+    transition-duration: 0.3s;
 }
 
 .selectUniqueness .uniqueness_title div:nth-child(1) {
@@ -913,6 +921,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    z-index: 2;
+}
+
+.gradable_qrcode {
+    position: absolute;
+    bottom: 47px;
+    right: 2px;
+    display: none;
+    z-index: 2;
 }
 
 .v9_marginRight16 {

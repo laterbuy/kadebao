@@ -246,4 +246,5 @@
     bottom: 47px;
     right: 2px;
     display: none;
+    z-index: 2;
 }

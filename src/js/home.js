@@ -49,7 +49,7 @@ $(function () {
    */
   var swiper1 = new Swiper("#certify .swiper-container", {
     autoplay: {
-      delay: 1000,
+      delay: 10000,
     },
     watchSlidesProgress: true,
     slidesPerView: "auto",
@@ -89,11 +89,13 @@ $(function () {
     if ($(ev.target).parent().hasClass("swiper-slide-active")) {
       if (ev.type === "mouseenter") {
         // 放大
-        $(ev.target).animate({ width: "257px", height: "410px" });
-        $($(ev.target).parent()).animate({ width: "257px", height: "410px" });
+        $("#certify").animate({ width: "639px" });
+        $(ev.target).animate({ width: "238px", height: "377px" });
+        $($(ev.target).parent()).animate({ width: "238px", height: "377px" });
         swiper1.autoplay.stop();
       } else {
         // 还原
+        $("#certify").animate({ width: "631px" });
         $(ev.target).animate({ width: "230px", height: "372px" });
         $($(ev.target).parent()).animate({ width: "230px", height: "372px" });
         swiper1.autoplay.start();

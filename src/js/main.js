@@ -25,7 +25,12 @@ $(function () {
                             <li><a href="./series.html">卡片系列</a></li>
                             <li class="nav_select"></li>
                         </ul>
-                        <div class="comments marginLeft20px">一键送评</div>
+                        <div class="comments marginLeft20px gradable_comments_menu">
+                          <p>一键送评</p>
+                          <div class="gradable_qrcode v9_qrcode" style="bottom: -120px">
+                              <img class="" src="static/img/qrcode_1.png" alt="">
+                          </div>
+                        </div>
                     </div>
                 </div>`;
   $(".container").prepend(header);
@@ -207,10 +212,10 @@ $(function () {
       $(this).find(".float_icon").attr("src", imgName);
       if ($(this).index() == 0) {
         $(this).removeClass("line1");
-        $(this).find(".float_qrcode").show();
+        $(this).find(".float_qrcode").show(300);
       }
       if ($(this).index() == 1) {
-        $(this).find(".float_qrcode").show();
+        $(this).find(".float_qrcode").show(300);
       }
       if ($(this).index() == 2) {
         $(this).removeClass("line2");
@@ -225,10 +230,10 @@ $(function () {
       $(this).find(".float_icon").attr("src", imgName);
       if ($(this).index() == 0) {
         $(this).addClass("line1");
-        $(this).find(".float_qrcode").hide();
+        $(this).find(".float_qrcode").hide(300);
       }
       if ($(this).index() == 1) {
-        $(this).find(".float_qrcode").hide();
+        $(this).find(".float_qrcode").hide(300);
       }
       if ($(this).index() == 2) {
         $(this).addClass("line2");
@@ -249,6 +254,13 @@ $(function () {
       $(".gradable_qrcode").fadeOut();
     }
   );
+  $(".gradable_comments_menu").on("mouseenter mouseleave", function (ev) {
+    if (ev.type === "mouseenter") {
+      $(".gradable_qrcode").fadeIn().css("display", "flex");
+    } else {
+      $(".gradable_qrcode").fadeOut();
+    }
+  });
 
   $("img.lazy").Lazy();
 });
