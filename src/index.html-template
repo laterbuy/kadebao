@@ -16,26 +16,30 @@
             <div class="vl_3">重新定义你对中文卡收藏的期望</div>
             <div class="comments">一键送评</div>
           </div>
-          <div id="certify">
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img class="banner lazy" data-src="static/img/slide_1.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img class="banner lazy" data-src="static/img/slide_2.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img class="banner lazy" data-src="static/img/slide_3.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img class="banner lazy" data-src="static/img/slide_4.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img class="banner lazy" data-src="static/img/slide_5.png" alt="">
-                </div>
-              </div>
-            </div>
+          <div id="focus_Box">
+            <span class="prev">&nbsp;</span>
+            <span class="next">&nbsp;</span>
+            <ul>
+              <li>
+                <a href="#"><img width="230" height="372" alt="Photo sharing jq22" data-src="static/img/slide_1.png" class="lazy"></a>
+              
+              </li>
+              <li>
+                <a href="#"><img width="230" height="372" alt="Photo sharing jq22" data-src="static/img/slide_2.png" class="lazy"></a>
+              </li>
+              <li>
+                <a href="#"><img width="230" height="372" alt="Photo sharing jq22" data-src="static/img/slide_3.png" class="lazy"></a>
+               
+              </li>
+              <li>
+                <a href="#"><img width="230" height="372" alt="Photo sharing jq22" data-src="static/img/slide_4.png" class="lazy"></a>
+                
+              </li>
+              <li>
+                <a href="#"><img width="230" height="372" alt="Photo sharing jq22" data-src="static/img/slide_5.png" class="lazy"></a>
+               
+              </li>
+            </ul>
           </div>
         </div>
         
@@ -52,14 +56,14 @@
       <div class="view">
         <div class="view_3_title">
           <div class="v3_cn">
-            卡得宝<span class="jode">®</span><span class="title-after">评级特点</span><span class="v3_title_posi">真卡保证</span>
+            卡得宝<span class="jode">®</span><span class="title-after">评级特点</span>
           </div>
           <div class="v3_en">Advantages of Kadebao Grading</div>
         </div>
         <ul class="characteristics">
           <li>
             <img alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAMAAAC5zwKfAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURf/+/jY2NjU1NTMzM0FBQTIyMjMzM0dwTIFXWTk5OTQ0NNcfItkmKNYdINYeIdchJNwtLjMzM9UeIUX1hNkAAAARdFJOUwV5lcA11+oAFlyqrlbsz386+9KkZAAAAmZJREFUWMPtmduygyAMReVasFqV///Y01ZQLgGCZaYzZ5q3Kix2QhBIh1tnG/6Lca15N5jSVGxPE1SrDtII2zxjhHeQFtpVoZG00FqFwtKuCoWlCXZJKCxNji8xSo+yTWhGmq8CbgILJVlpsROgUJLwytLqvsREWZVWESqjBjhpsVA/TDCwLi0rFAReWqi8ALy25n/AH/BbwGlZVE/g3RjzUP2AL54xSy+g2nnm3gtoeWbqBHyYUOCHQJXwSkCF1/c4hwCBMgKqaVI4fRYoy8B1NmZeUbwMUIRbwLtjQgR5dgsQUdt9o9Xu5xwmRok36P34EAFpuFvbrvNU59kzAh2KT1eTEHO8WEug+wzEZKLlcPCWAQy/juMdJ+IaEG9rTl/aM8gbb6cPNKo5p89Oskyej0lo1/kgFng2hGPyXKfZdBCXAi8TwiMUHCQWeDz7FRBAOoVEiGc9FtCZGBrKJ4I8BZ9f869OIsiDZQTLORbviDDPBoqB7/Z5TuZrJ05DS59gNJFucvMjw8t1CYcj+PMDKQo87hbYk/aNb5llF0lkWIGsIhDTonF85wPKaY6JELWXKcQGrew1iqJasSpRMdzY1mng+wZ+PxEpYSNd8cTFBjN/BEOkW8MicM7k4+jiVw9MkI2b4JkF4q7J2BXgpjqTjy7/UMkVETeaFjHo1sx79hqPUkI0jfqoNIxtFTB6VmX8us1ZDaGt9y19lidGi+Tj+UwPzca9MorQSmmvBCIvFSfO8L8QfpWGXq10crDoJz4pcpKkziXJ8JEFfn/irY88VMoOuL0e9U4/pvvgLLMn7cvW+++PPwyyaLSMeitmAAAAAElFTkSuQmCC">
-            <div>真卡保证</div>
+            <div style="display: flex; justify-content: center;"><span class="v3_title_posi">真卡保证</span></div>
             <div>Authentic</div>
             <div>
               卡得宝深耕中文卡，有能力鉴别原版真伪，并承诺只封装原版真卡，让卡片交易更放心。
@@ -261,7 +265,7 @@
         </div>
       </div>
       <div class="view v8_bg">
-        <div class="v4_content" style="padding: 35px auto 30px">
+        <div class="v4_content_1">
           <div class="v8_text">
             <img class="quotes" alt="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAA8BAMAAAAkp6FXAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAhUExURUdwTNUeIdYeIdUeIdkiJdYeIdYeIdUeIdcgI9UeIdUeIc/7H5YAAAAKdFJOUwCpb+wbjU/PNbzvaXDXAAABJ0lEQVQ4y+3SoU4DQRAG4CEUNKHFnLo0KFQJqqcuCEhQ50iqGoJCIRBc1aVJTVUVAtXetVzZp6S33Z3Ov1OPuXEz+212dnfIyFjRLiIoUQta0IJ/ABWCzRHQbyKS4KWpjBjYGElg48lVagQlg/lx8MPgTbZ96GurgDt04tI1gxs8NHHpkkEEh3b8rd8ZTODQcw8uGPjKwGYnPo39Om9Z2PTUp4UHvCWDliv1kGZse0zwVXbxzb/dxKMJH/IM/n9msGWi+0RsmXYPn7/v6OHZyC1yOlIKByYGEPxcc60UwFqBkgBkCgwA1KRAAWCrwIYAxAosAJThrJg6BZAp8AGTUapp+00lqAoFYpitHoXgE4ZPrDvwJafzdkwBGF5zepdfvhJEN78SlT+wv3X7fLDTqAAAAABJRU5ErkJggg==">
             卡片能够打破人与人之间的隔膜

@@ -131,7 +131,8 @@ $(function () {
                 <ul class="v9_list ">
                     <li class="v9_list_right">商务邮箱：BD@kadebao.com</li>
                     <li>
-                        <span class="v9_service">客服微信
+                        <span>客服微信</span>
+                        <span class="v9_service">kadebao2021
                             <div class="service_qrcode">
                                 <img class="lazy" data-src="static/img/service-qrcode.png" alt="">
                             </div>
@@ -158,8 +159,12 @@ $(function () {
 </div>
 <div class="view">
     <div class="v10">
-        <img data-src="static/img/©.png" class="lazy" alt="">
-        <div>版权所有2022卡得宝 京ICP备202</div>
+        <div class="v10-1">
+          <div>CoptRight</div>
+          <img data-src="static/img/©.png" class="lazy" alt="">
+          <div>版权所有2022卡得宝版权所有，未经许可不许转载</div>
+        </div>
+        <div>京ICP备2021014848号</div>
     </div>
 </div>`;
   $(".container").append(footer);
@@ -168,10 +173,10 @@ $(function () {
    */
   $(".v9_service").hover(
     function () {
-      $(".service_qrcode").css("display", "flex");
+      $(".service_qrcode").show(300);
     },
     function () {
-      $(".service_qrcode").css("display", "none");
+      $(".service_qrcode").hide();
     }
   );
 
@@ -248,10 +253,11 @@ $(function () {
    */
   $(".gradable_comments").hover(
     function () {
-      $(".gradable_qrcode").fadeIn().css("display", "flex");
+      $(".gradable_qrcode").css("display", "flex");
+      $(".gradable_qrcode").show(300);
     },
     function () {
-      $(".gradable_qrcode").fadeOut();
+      $(".gradable_qrcode").hide();
     }
   );
   $(".gradable_comments_menu").on("mouseenter mouseleave", function (ev) {

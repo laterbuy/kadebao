@@ -1,8 +1,8 @@
 import "../css/main.css";
 import "../css/swiper.min.css";
 import "../css/certify.css";
+import "../css/focusBox.css";
 
-import "./swiper.min.js";
 import "./mock.js";
 import "./main.js";
 import "./home.js";

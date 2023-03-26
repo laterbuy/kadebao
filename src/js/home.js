@@ -1,5 +1,6 @@
 import Swiper from "./swiper.min.js";
 import "jquery-lazy";
+import ZoomPic from "./focusBox.js";
 import data from "./mock";
 
 $(function () {
@@ -29,7 +30,7 @@ $(function () {
           '<img class="titleUrl lazy" data-src="' +
           item.titleUrl +
           '" alt="">' +
-          '<img class="photoUrl lazy" data-src="' +
+          '<img class="photoUrl lazy" src="./static/img/loading.gif" data-src="' +
           item.photoUrl +
           '" alt="">' +
           "</div>" +
@@ -43,48 +44,7 @@ $(function () {
       console.log(xhr, status, error);
     },
   });
-
-  /**
-   * v1 轮播
-   */
-  var swiper1 = new Swiper("#certify .swiper-container", {
-    autoplay: {
-      delay: 10000,
-    },
-    watchSlidesProgress: true,
-    slidesPerView: "auto",
-    centeredSlides: true,
-    loop: true,
-    speed: 1000,
-    loopedSlides: 5,
-    on: {
-      progress: function (progress) {
-        for (let i = 0; i < this.slides.length; i++) {
-          var slide = this.slides.eq(i);
-          var slideProgress = this.slides[i].progress;
-          var modify = 1;
-          if (Math.abs(slideProgress) > 1) {
-            modify = (Math.abs(slideProgress) - 1) * 0.2 + 1;
-          }
-          var translate = slideProgress * modify * 87 + "px";
-          var scale = 1 - Math.abs(slideProgress) / 5;
-          var zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
-          slide.transform("translateX(" + translate + ") scale(" + scale + ")");
-          slide.css("zIndex", zIndex);
-          slide.css("opacity", 1);
-          if (Math.abs(slideProgress) > 3) {
-            slide.css("opacity", 0);
-          }
-        }
-      },
-      setTransition: function (transition) {
-        for (var i = 0; i < this.slides.length; i++) {
-          var slide = this.slides.eq(i);
-          slide.transition(transition);
-        }
-      },
-    },
-  });
+  new ZoomPic("focus_Box");
   $(".swiper-slide").on("mouseenter mouseleave", (ev) => {
     if ($(ev.target).parent().hasClass("swiper-slide-active")) {
       if (ev.type === "mouseenter") {
