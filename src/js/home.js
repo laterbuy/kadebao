@@ -30,7 +30,7 @@ $(function () {
           '<img class="titleUrl lazy" data-src="' +
           item.titleUrl +
           '" alt="">' +
-          '<img class="photoUrl lazy" src="./static/img/loading.gif" data-src="' +
+          '<img class="photoUrl sci-bottom-img lazy"  data-src="' +
           item.photoUrl +
           '" alt="">' +
           "</div>" +
