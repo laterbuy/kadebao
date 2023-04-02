@@ -1081,6 +1081,9 @@ body {
     top: -0.7em;
     left: 0;
 }
+.sci-bottom-img{
+  background: url(9b15a498d63a67f5931a.gif) no-repeat center 50%;
+}
 /**
  * Swiper 4.5.3
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1130,7 +1133,7 @@ body {
   z-index: 0;
   position: absolute;
   width: 0px;
-  background: #787878;
+  background: #ccc;
   height: 0px;
   top: 146px;
   cursor: pointer;
