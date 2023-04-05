@@ -13,6 +13,10 @@ TODO:
 参考现有跳转页面样式做一个弹框
 https://api.kadebao.com/openapi/common/getCardDetail?gradeNum=f 
 086020942
+
+086021071 
+086012236 正常评级的卡 
+
 [x]5. 轮播图优化
 [x]6. logo替换
 [x]7. 动效优化

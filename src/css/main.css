@@ -177,9 +177,9 @@ body {
 }
 
 .vl_3 {
-    font-size: 24px;
+    font-size: 28px;
     color: #fff;
-    margin: 12px 0 52px;
+    margin: 8px 0 52px;
 }
 
 /* v2 */
@@ -264,10 +264,11 @@ body {
 }
 
 .v3_title_posi {
-    font-size: 12px;
+    font-size: 20px;
     color: #fff !important;
-    width: 56px;
-    height: 19px;
+    padding: 4px 6px;
+    /* width: 56px;
+    height: 19px; */
     background: linear-gradient(285deg, #FD932B 0%, #D51E21 100%);
     border-radius: 8px 0px 8px 0px;
     display: flex;
@@ -304,7 +305,8 @@ body {
 }
 
 .characteristics li div:nth-child(2) {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 700;
     color: #3D4756;
 }
 

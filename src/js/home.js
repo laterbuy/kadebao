@@ -2,6 +2,7 @@ import Swiper from "./swiper.min.js";
 import "jquery-lazy";
 import ZoomPic from "./focusBox.js";
 import data from "./mock";
+import { $modal } from "./modal";
 
 $(function () {
   $.ajax({
@@ -94,7 +95,7 @@ $(function () {
   data.forEach(function (item, idx) {
     str +=
       '<div class="swiper-slide feedback_info">' +
-      '<img class="v6_avatar" data-src="./static/img/avatar_' +
+      '<img class="v6_avatar" src="./static/img/avatar_' +
       (idx + 1) +
       '.png" alt="">' +
       '<div class="feedback_name">' +
@@ -161,12 +162,200 @@ $(function () {
   /**
    * 评级编号查询
    */
+
   $(".search").on("click", function () {
-    console.log($(".query_input").val());
-    if ($(".query_input").val()) {
-      window.location.href =
-        "https://web.kadebao.com/index.html?gradeNum=" +
-        $(".query_input").val();
+    let value = $(".query_input").val();
+    // value = "086021071";
+    if (value) {
+      $.get(
+        `https://api.kadebao.com/openapi/common/getCardDetail?gradeNum=${value}`,
+        (data) => {
+          // 弹框
+          if (data.data && data.data.cardSys) {
+            const { list } = data.data;
+            const map = {
+              10: 0,
+              9.9: 0,
+              9.8: 0,
+              9.5: 0,
+              9: 0,
+              8.5: 0,
+              7.5: 0,
+              6.5: 0,
+              6: 0,
+              5.5: 0,
+              5: 0,
+              4.5: 0,
+            };
+            (list||[]).map(i => {
+              map[i.totalScore] = i.num;
+            })
+            let totalHtml = `<div class="score-total">
+              <div class="score-title">卡得宝总分</div>
+              <div  class="score-value">${data.data.totalScore}</div>
+            </div>
+            <div class="score-other">
+              <div class="score-title">正面</div>
+              <div  class="score-value">${data.data.frontScore}</div>
+            </div>
+            <div class="score-other">
+              <div class="score-title">背面</div>
+              <div  class="score-value">${data.data.backScore}</div>
+            </div>
+            <div class="score-other">
+              <div class="score-title">四角</div>
+              <div class="score-value">${data.data.fourScore}</div>
+            </div>
+            <div class="score-other">
+              <div class="score-title">四边</div>
+              <div class="score-value">${data.data.printScore}</div>
+            </div>`
+            if (data.data.totalScore === '本卡为真且无人为修饰') {
+              totalHtml =  `<div class="score-text">本卡为真且无人为修饰</div>`;
+            }
+            const content = `
+              <div class="body">
+              <div class="title">
+                <img src="/static/img/sLogo.png" />
+                |
+                <span>${data.data.cardSys}</span>
+              </div>
+              <div class="score">
+              
+                <div class="score-id">
+                  <div class="score-title">评分编号</div>
+                  <div class="score-value">${data.data.gradeNum}</div>
+                </div>
+                <div class="score-line"></div>
+                
+                ${totalHtml}
+              </div>
+
+              <div class="base-info">
+                  <div class="base-info-title">基本信息</div>
+                  <div  class="base-info-item">
+                    <div>
+                      <div class="base-info-key">卡片系列</div>
+                      <div class="base-info-value">${data.data.cardSys}</div>
+                    </div>
+                    <div>
+                      <div class="base-info-key">卡片名称</div>
+                      <div class="base-info-value border-right">${data.data.cardName}</div>
+                    </div>
+                  </div>
+                  <div class="base-info-item">
+                    <div>
+                      <div class="base-info-key">卡片材质</div>
+                      <div class="base-info-value">${data.data.cardQuality}</div>
+                    </div>
+                    <div>
+                      <div class="base-info-key">发行年份</div>
+                      <div class="base-info-value border-right">${data.data.cardYear}</div>
+                    </div>
+                  </div>
+                  <div class="base-info-item border-bottom">
+                    <div>
+                      <div class="base-info-key">卡片尺寸</div>
+                      <div class="base-info-value">${data.data.cardSize}</div>
+                    </div>
+                    <div>
+                      <div class="base-info-key">生产商</div>
+                      <div class="base-info-value border-right">${data.data.cardProducer}</div>
+                    </div>
+                  </div>
+                </div>
+
+
+                
+                <div class="other-info">
+                  <div class="other-info-title">评级卡评级概况</div>
+                  <div class="other-info-item">
+                    <div>
+                      <div class="other-info-key0 other-info-key border-bottom">评分</div>
+                      <div class="other-info-value0 other-info-value border-bottom">数量</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom other-info-key1">10</div>
+                      <div class="other-info-value border-bottom">${map['10']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom other-info-key1">9.9</div>
+                      <div class="other-info-value border-bottom">${map['9.9']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom other-info-key1">9.8</div>
+                      <div class="other-info-value border-bottom">${map['9.8']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom other-info-key1">9.5</div>
+                      <div class="other-info-value border-bottom">${map['9.5']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom other-info-key2">9</div>
+                      <div class="other-info-value border-bottom">${map['9']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom other-info-key2">8.5</div>
+                      <div class="other-info-value border-bottom">${map['8.5']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom">7.5</div>
+                      <div class="other-info-value border-bottom">${map['7.5']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom">6.5</div>
+                      <div class="other-info-value border-bottom">${map['6.5']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom">6</div>
+                      <div class="other-info-value border-bottom">${map['6']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom">5.5</div>
+                      <div class="other-info-value border-bottom">${map['5.5']}</div>
+                    </div>
+                    <div>
+                      <div class="other-info-key border-bottom">5</div>
+                      <div class="other-info-value border-bottom">${map['5']}</div>
+                    </div>
+                    <div class="border-right">
+                      <div class="other-info-key border-bottom">4.5</div>
+                      <div class="other-info-value border-bottom">${map['4.5']}</div>
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+            `;
+            $modal({
+              type: "confirm", //弹框类型  'alert' or  'confirm' or 'message'   message提示(开启之前如果之前含有弹框则清除)
+              title: "评级卡结果", // 提示文字
+              content: content, // 提示文字
+              transition: 300, //过渡动画 默认 200   单位ms
+              closable: true, // 是否显示可关闭按钮  默认为 false
+              mask: true, // 是否显示遮罩层   默认为 false
+              pageScroll: false, // 是否禁止页面滚动
+              width: 800, // 单位 px 默认显示宽度 最下默认为300
+              maskClose: true, // 是否点击遮罩层可以关闭提示框 默认为false
+              cancelText: "取消", // 取消按钮 默认为 取消
+              confirmText: "确认", // 确认按钮 默认未 确认
+              cancel: function (close) {
+                close(); // 调用返回的 关闭弹框函数 才能关闭
+              },
+              confirm: function (close) {
+                close(); // 调用返回的 关闭弹框函数 才能关闭
+              },
+            });
+          } else {
+            // 给提示
+            $modal({
+              type: "message", //弹框类型  'alert' or  'confirm' or 'message'   message提示(开启之前如果之前含有弹框则清除)
+              icon: "error", // 提示图标显示 'info' or 'success' or 'warning' or 'error'  or 'question'
+              content: "未查询到相关评级信息", // 提示文字
+            });
+          }
+        }
+      );
     }
   });
 });

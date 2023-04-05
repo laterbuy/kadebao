@@ -131,10 +131,10 @@ $(function () {
                 <ul class="v9_list ">
                     <li class="v9_list_right">商务邮箱：BD@kadebao.com</li>
                     <li>
-                        <span>客服微信</span>
+                        <span>企微客服</span>
                         <span class="v9_service">kadebao2021
                             <div class="service_qrcode">
-                                <img class="lazy" data-src="static/img/service-qrcode.png" alt="">
+                                <img class="lazy" data-src="static/img/qiwei-qrcode.png" alt="">
                             </div>
                         </span>
                     </li>
@@ -164,7 +164,7 @@ $(function () {
           <img data-src="static/img/©.png" class="lazy" alt="">
           <div>版权所有2022卡得宝版权所有，未经许可不许转载</div>
         </div>
-        <div>京ICP备2021014848号</div>
+        <div style="display: flex"><img src="static/img/beian.png" />京公网安备 11010502041074 京ICP备2021014848号</div>
     </div>
 </div>`;
   $(".container").append(footer);

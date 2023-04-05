@@ -151,7 +151,7 @@ ZoomPic.prototype = {
   },
   doMove: function (oElement, oAttr, fnCallBack) {
     var _this = this;
-    clearInterval(oElement.timer);
+    oElement && oElement.timer && clearInterval(oElement.timer);
     oElement.timer = setInterval(function () {
       var bStop = true;
       for (var property in oAttr) {
