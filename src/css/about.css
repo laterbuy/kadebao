@@ -29,7 +29,7 @@
 }
 
 .v1_desc {
-    width: 1000px;
+    /* width: 1000px; */
     font-size: 16px;
     line-height: 40px;
     color: #FFFFFF;
@@ -66,6 +66,7 @@
     line-height: 30px;
     color: #3D4756;
     margin-bottom: 40px;
+    font-family: alibaba;
 }
 
 .v2_about_desc {
@@ -102,6 +103,7 @@
     font-size: 30px;
     line-height: 30px;
     color: #3D4756;
+    font-family: alibaba;
 }
 
 .v3_left div:nth-child(2) {
@@ -210,6 +212,7 @@
     font-size: 30px;
     line-height: 30px;
     color: #3D4756;
+    font-family: alibaba;
 }
 
 .v5_about_title {
