@@ -1113,6 +1113,7 @@ body {
     font-size: 58px;
     color: #E2A275;
     line-height: 80px;
+    font-family: alibaba;
 }
 
 .l1-desc {
@@ -1133,6 +1134,7 @@ body {
     color: #3D4756;
     text-align: center;
     margin: 0 0 33px 0;
+    font-family: alibaba;
 }
 
 .l2-list {

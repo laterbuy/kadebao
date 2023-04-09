@@ -1099,6 +1099,7 @@ body {
     color: #3D4756;
     font-weight: bold;
     line-height: 80px;
+    font-family: alibaba;
 }
 
 .gradable .v1_c_t2 {
@@ -1124,6 +1125,7 @@ body {
     color: #3D4756;
     text-align: center;
     margin-bottom: 44px;
+    font-family: alibaba;
 }
 
 .view_style {

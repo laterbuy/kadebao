@@ -1108,6 +1108,7 @@ body {
 .sc-title {
     font-size: 32px;
     line-height: 44px;
+    font-family: alibaba;
 
 }
 
@@ -1115,6 +1116,7 @@ body {
     font-size: 58px;
     line-height: 80px;
     margin: 8px 0 10px 0;
+    font-family: alibaba;
 }
 
 /* span {
@@ -1143,6 +1145,7 @@ body {
 .s-2 span{
     border-bottom: 5px solid #D51E21;
     padding-bottom: 17px;
+    font-family: alibaba;
 }
 
 .s-card-list {

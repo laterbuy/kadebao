@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>卡得宝</title>
     <style>
         .l4-container {
@@ -15,6 +15,7 @@
             line-height: 30px;
             color: #3D4756;
             margin-bottom: 44px;
+            font-family: alibaba;
         }
 
         .l4-content {
