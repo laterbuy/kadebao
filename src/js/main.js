@@ -131,8 +131,7 @@ $(function () {
                 <ul class="v9_list ">
                     <li class="v9_list_right">商务邮箱：BD@kadebao.com</li>
                     <li>
-                        <span>企微客服</span>
-                        <span class="v9_service">kadebao2021
+                        <span class="v9_service">企微客服
                             <div class="service_qrcode">
                                 <img class="lazy" data-src="static/img/qiwei-qrcode.png" alt="">
                             </div>
