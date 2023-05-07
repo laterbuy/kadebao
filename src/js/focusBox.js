@@ -126,7 +126,7 @@ ZoomPic.prototype = {
       : oElement.attachEvent("on" + sEventType, fnHandler);
   },
   css: function (oElement, attr, value) {
-    if (arguments.length == 2) {
+    if (arguments.length == 2 && oElement) {
       return oElement.currentStyle
         ? oElement.currentStyle[attr]
         : getComputedStyle(oElement, null)[attr];
@@ -152,24 +152,27 @@ ZoomPic.prototype = {
   doMove: function (oElement, oAttr, fnCallBack) {
     var _this = this;
     oElement && oElement.timer && clearInterval(oElement.timer);
-    oElement.timer = setInterval(function () {
-      var bStop = true;
-      for (var property in oAttr) {
-        var iCur = parseFloat(_this.css(oElement, property));
-        property == "opacity" && (iCur = parseInt(iCur.toFixed(2) * 100));
-        var iSpeed = (oAttr[property] - iCur) / 5;
-        iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
-
-        if (iCur != oAttr[property]) {
-          bStop = false;
-          _this.css(oElement, property, iCur + iSpeed);
+    if (oElement) {
+      oElement.timer = setInterval(function () {
+        var bStop = true;
+        for (var property in oAttr) {
+          var iCur = parseFloat(_this.css(oElement, property));
+          property == "opacity" && (iCur = parseInt(iCur.toFixed(2) * 100));
+          var iSpeed = (oAttr[property] - iCur) / 5;
+          iSpeed = iSpeed > 0 ? Math.ceil(iSpeed) : Math.floor(iSpeed);
+  
+          if (iCur != oAttr[property]) {
+            bStop = false;
+            _this.css(oElement, property, iCur + iSpeed);
+          }
         }
-      }
-      if (bStop) {
-        clearInterval(oElement.timer);
-        fnCallBack && fnCallBack.apply(_this, arguments);
-      }
-    }, 30);
+        if (bStop) {
+          clearInterval(oElement.timer);
+          fnCallBack && fnCallBack.apply(_this, arguments);
+        }
+      }, 30);
+    }
+    
   },
 };
 

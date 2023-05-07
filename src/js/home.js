@@ -63,6 +63,10 @@ $(function () {
       }
     }
   });
+
+  $('.lookMore').on('click', () => {
+    location.href = '/series.html'
+  })
   /**
    * v4 hover
    */
@@ -80,7 +84,7 @@ $(function () {
         $(".u_right_cont_posi").stop().hide();
       }
       $(".v4_check_ani").stop().hide();
-      $(".v4_check_ani").eq($(this).index()).stop().fadeIn(500);
+      $(".v4_check_ani").eq($(this).index()).stop().fadeIn(100);
     },
     function () {
       //   console.log($(this).index());

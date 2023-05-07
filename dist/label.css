@@ -166,14 +166,14 @@ body {
 .vl_1 {
     font-size: 40px;
     color: #D51E21;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
 }
 
 .vl_2 {
     font-size: 58px;
     color: #fff;
-    font-weight: bold;
-    font-family: alibaba;
+    /* font-weight: bold; */
+    font-family: PingFangSC-Regular, PingFang SC;
 }
 
 .vl_3 {
@@ -291,7 +291,7 @@ body {
     padding: 32px 38px 40px;
     border: 1px solid #EEF0F2;
     border-radius: 3px;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 
 .characteristics li:hover {
@@ -383,7 +383,7 @@ body {
 
 .uniqueness_title {
     width: 125px;
-    transition-duration: 0.5s;
+    /* transition-duration: 0.5s; */
 }
 
 .uniqueness_title div:nth-child(1) {
@@ -410,6 +410,7 @@ body {
     height: 150px;
     transition-duration: 0.3s;
     box-shadow: 8px 8px 12px 0px transparent;
+    border: 1px solid #EEF0F2;
 }
 
 .uniqueness_desc div:nth-child(1) {
@@ -471,7 +472,7 @@ body {
 }
 
 .selectUniqueness .uniqueness_desc {
-    border: 1px solid #EEF0F2;
+    border: 1px solid transparent;
     box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -748,6 +749,7 @@ body {
     font-size: 16px;
     color: #D51E21;
     margin-top: 44px;
+    cursor: pointer;
     /* margin-bottom: 70px; */
     text-align: center;
     font-weight: bold;
@@ -880,7 +882,7 @@ body {
 .v9_service {
     position: relative;
     cursor: pointer;
-    text-decoration-line: underline;
+    /* text-decoration-line: underline; */
 }
 
 .service_qrcode {
@@ -890,7 +892,7 @@ body {
     border-radius: 5px;
     position: absolute;
     top: -110px;
-    left: -7px;
+    left: -20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1113,7 +1115,8 @@ body {
     font-size: 58px;
     color: #E2A275;
     line-height: 80px;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
+    /* font-weight: 700; */
 }
 
 .l1-desc {
@@ -1134,7 +1137,7 @@ body {
     color: #3D4756;
     text-align: center;
     margin: 0 0 33px 0;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
 }
 
 .l2-list {
@@ -1369,4 +1372,11 @@ body {
 
 .l3-2 .l3-1-text3 {
     right: 0;
+}
+
+.jode {
+    font-size: 0.6em;
+    position: relative;
+    top: -0.7em;
+    left: 0;
 }

@@ -63,12 +63,12 @@
 
 #focus_Box .prev {
   background: url(../static/img/btn.png) left bottom no-repeat;
-  left: 0px
+  left: -54px
 }
 
 #focus_Box .next {
   background: url(../static/img/btn.png) right bottom no-repeat;
-  right: 0px
+  right: -54px
 }
 
 #focus_Box .prev:hover {

@@ -66,7 +66,7 @@
     line-height: 30px;
     color: #3D4756;
     margin-bottom: 40px;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
 }
 
 .v2_about_desc {
@@ -91,7 +91,8 @@
     align-items: center;
     justify-content: space-between;
     width: 1200px;
-    margin: 42px auto;
+    margin: auto;
+    padding: 42px 0;
 }
 
 .v3_left {
@@ -103,7 +104,7 @@
     font-size: 30px;
     line-height: 30px;
     color: #3D4756;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
 }
 
 .v3_left div:nth-child(2) {
@@ -212,7 +213,7 @@
     font-size: 30px;
     line-height: 30px;
     color: #3D4756;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
 }
 
 .v5_about_title {

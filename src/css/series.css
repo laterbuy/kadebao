@@ -17,13 +17,13 @@
 }
 
 .v1-img1 {
-    width: 229px;
+    width: 249px;
 }
 
 .sc-title {
     font-size: 32px;
     line-height: 44px;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
 
 }
 
@@ -31,7 +31,8 @@
     font-size: 58px;
     line-height: 80px;
     margin: 8px 0 10px 0;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
+    /* font-weight: 700; */
 }
 
 /* span {
@@ -60,7 +61,7 @@
 .s-2 span{
     border-bottom: 5px solid #D51E21;
     padding-bottom: 17px;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
 }
 
 .s-card-list {
@@ -116,4 +117,23 @@
     align-items: center;
     justify-content: center;
     padding: 12px;
+}
+
+
+.l1-ttle {
+    font-size: 58px;
+    color: #E2A275;
+    line-height: 80px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    text-align: left;
+    color: #fff;
+    /* font-weight: 700; */
+}
+
+
+.jode {
+    font-size: 0.6em;
+    position: relative;
+    top: -0.7em;
+    left: 0;
 }

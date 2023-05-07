@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node preload.js && webpack && cp -r ./src/static ./doc",
+    "build": "node preload.js && webpack && cp -r ./src/static ./dist",
     "start": "cross-env NODE_ENV=development webpack",
     "serve": "node preload.js && cross-env NODE_ENV=development webpack server",
     "test": "echo \"Error: no test specified\" && exit 1"

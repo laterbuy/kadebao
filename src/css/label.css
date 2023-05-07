@@ -28,7 +28,8 @@
     font-size: 58px;
     color: #E2A275;
     line-height: 80px;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
+    /* font-weight: 700; */
 }
 
 .l1-desc {
@@ -49,7 +50,7 @@
     color: #3D4756;
     text-align: center;
     margin: 0 0 33px 0;
-    font-family: alibaba;
+    font-family: PingFangSC-Regular, PingFang SC;
 }
 
 .l2-list {
@@ -284,4 +285,11 @@
 
 .l3-2 .l3-1-text3 {
     right: 0;
+}
+
+.jode {
+    font-size: 0.6em;
+    position: relative;
+    top: -0.7em;
+    left: 0;
 }
